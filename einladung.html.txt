@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation Menu -->
+    <nav>
+        <a href=index.html>Home</a>
+        <a href=personal.html>Personal</a>
+        <a href=kalender.html>Kalender</a>
+        <a href=einladung.html>Einladung</a>
+        <a href=schulungen.html>Schulungen</a>
+        <a href=statistk.html>Statistik</a>
+        <a href="#suche">Suche</a>
+    </nav>
+      <main id="einladung">
+        <h1>Einladung</h1>
+        <form>
+            <div class="form-container">
+                <!-- Form Left Column -->
+                <div class="form-group">
+                    <label for="schulung">Schulung auswählen</label>
+                    <select id="schulung" required>
+                        <option value="">-- Schulung auswählen --</option>
+                        <option value="schulung1">Schulung 1</option>
+                        <option value="schulung2">Schulung 2</option>
+                        <option value="schulung3">Schulung 3</option>
+                    </select>
+
+                    <label for="datum">Datum auswählen</label>
+                    <input type="date" id="datum" required>
+
+                    <label for="vortrag">Vorträger/in auswählen</label>
+                    <select id="vortrag" required>
+                        <option value="">-- Vorträger/in auswählen --</option>
+                        <option value="person1">Person 1</option>
+                        <option value="person2">Person 2</option>
+                        <option value="person3">Person 3</option>
+                    </select>
+                </div>
+
+                <!-- Form Right Column -->
+                <div class="form-group">
+                    <label for="teilnehmer">Teilnehmerinnen auswählen</label>
+                    <select id="teilnehmer" multiple required>
+                        <option value="mitarbeiter1">Mitarbeiter 1</option>
+                        <option value="mitarbeiter2">Mitarbeiter 2</option>
+                        <option value="mitarbeiter3">Mitarbeiter 3</option>
+                        <option value="mitarbeiter4">Mitarbeiter 4</option>
+                    </select>
+
+                    <label for="brief">Brief schreiben</label>
+                    <textarea id="brief" rows="5" placeholder="Einladungstext hier eingeben..." required></textarea>
+                </div>
+            </div>
+
+            <!-- Action Button -->
+            <div class="buttons">
+                <button type="submit" class="save">Einladung senden</button>
+            </div>
+        </form>
+    </main>
+  </body>
+</html>

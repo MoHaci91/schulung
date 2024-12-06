@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schulungen Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation Menu -->
+    <nav>
+        <a href=index.html>Home</a>
+        <a href=personal.html>Personal</a>
+        <a href=kalender.html>Kalender</a>
+        <a href=einladung.html>Einladung</a>
+        <a href=schulungen.html>Schulungen</a>
+        <a href=statistk.html>Statistik</a>
+        <a href="#suche">Suche</a>
+    </nav>
+
+    <!-- Schulungen Section -->
+    <main id="schulungen">
+        <h1>Schulungen verwalten</h1>
+
+        <!-- Add New Schulung -->
+        <section class="form-section">
+            <h2>Neue Schulung hinzufügen</h2>
+            <form>
+                <label for="schulung-title">Titel der Schulung</label>
+                <input type="text" id="schulung-title" placeholder="Titel der Schulung" required>
+
+                <label for="vortragender">Vortragender/in</label>
+                <input type="text" id="vortragender" placeholder="Name der Vortragenden" required>
+
+                <label for="modul">Modul auswählen</label>
+                <select id="modul" required>
+                    <option value="" disabled selected>Wähle ein Modul</option>
+                    <option value="Modul 1">Modul 1</option>
+                    <option value="Modul 2">Modul 2</option>
+                </select>
+
+                <button type="submit" class="save">Hinzufügen</button>
+            </form>
+        </section>
+
+        <!-- Add New Modul -->
+        <section class="form-section">
+            <h2>Neues Modul hinzufügen</h2>
+            <form>
+                <label for="modul-title">Titel des Moduls</label>
+                <input type="text" id="modul-title" placeholder="Titel des Moduls" required>
+
+                <button type="submit" class="save">Hinzufügen</button>
+            </form>
+        </section>
+
+        <!-- List of Schulungen -->
+        <section>
+            <h2>Vorhandene Schulungen</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Titel</th>
+                        <th>Vortragender/in</th>
+                        <th>Modul</th>
+                        <th>Aktionen</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Schulung 1</td>
+                        <td>Vortragender 1</td>
+                        <td>Modul 1</td>
+                        <td>
+                            <button class="edit">Bearbeiten</button>
+                            <button class="delete">Löschen</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Schulung 2</td>
+                        <td>Vortragender 2</td>
+                        <td>Modul 2</td>
+                        <td>
+                            <button class="edit">Bearbeiten</button>
+                            <button class="delete">Löschen</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+
+</html>

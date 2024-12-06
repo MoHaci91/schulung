@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav>
+        <a href=index.html>Home</a>
+        <a href=personal.html>Personal</a>
+        <a href=kalender.html>Kalender</a>
+        <a href=einladung.html>Einladung</a>
+        <a href=schulungen.html>Schulungen</a>
+        <a href=statistk.html>Statistik</a>
+        <a href="#suche">Suche</a>
+    </nav>
+
+    <!-- Personal Section -->
+    <main id="personal">
+        <h1>Personal anlegen und verwalten</h1>
+        <form>
+            <div class="form-container">
+                <!-- Left Column: Personal Data -->
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Name" required>
+
+                    <label for="vorname">Vorname</label>
+                    <input type="text" id="vorname" placeholder="Vorname" required>
+
+                    <label for="geb-datum">Geburtsdatum</label>
+                    <input type="date" id="geb-datum" required>
+
+                    <label for="stelle">Stelle</label>
+                    <input type="text" id="stelle" placeholder="Stelle" required>
+
+                    <label for="stellenprofil">Stellenprofil</label>
+                    <input type="text" id="stellenprofil" placeholder="Stellenprofil" required>
+
+                    <label for="eintritt">Eintrittsdatum</label>
+                    <input type="date" id="eintritt" required>
+
+                    <label for="status">Status</label>
+                    <select id="status" required>
+                        <option value="aktiv">Aktiv</option>
+                        <option value="inaktiv">Inaktiv</option>
+                        <option value="karenz">Karenz</option>
+                    </select>
+                </div>
+
+                <!-- Right Column: Schulungen -->
+                <div class="form-group">
+                    <h3>Schulungen</h3>
+                    <div class="schulung">
+                        <label for="schulung1">Schulung 1</label>
+                        <select id="schulung1" class="schulung-status">
+                            <option value="nein" selected>Nein</option>
+                            <option value="ja">Ja</option>
+                        </select>
+                        <input type="date" id="schulung1-datum" class="schulung-datum" disabled>
+                    </div>
+
+                    <div class="schulung">
+                        <label for="schulung2">Schulung 2</label>
+                        <select id="schulung2" class="schulung-status">
+                            <option value="nein" selected>Nein</option>
+                            <option value="ja">Ja</option>
+                        </select>
+                        <input type="date" id="schulung2-datum" class="schulung-datum" disabled>
+                    </div>
+
+                    <div class="schulung">
+                        <label for="schulung3">Schulung 3</label>
+                        <select id="schulung3" class="schulung-status">
+                            <option value="nein" selected>Nein</option>
+                            <option value="ja">Ja</option>
+                        </select>
+                        <input type="date" id="schulung3-datum" class="schulung-datum" disabled>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="buttons">
+                <button type="button" class="edit">Bearbeiten</button>
+                <button type="submit" class="save">Speichern</button>
+            </div>
+        </form>
+    </main>
+</body>
+
+<script>
+    // Script to enable/disable date input based on Schulung status
+    document.querySelectorAll('.schulung-status').forEach(select => {
+        select.addEventListener('change', (event) => {
+            const relatedDateInput = event.target.nextElementSibling;
+            if (event.target.value === "ja") {
+                relatedDateInput.disabled = false;
+                relatedDateInput.required = true;
+            } else {
+                relatedDateInput.disabled = true;
+                relatedDateInput.required = false;
+                relatedDateInput.value = ''; // Clear the date input
+            }
+        });
+    });
+</script>
+
+</html>

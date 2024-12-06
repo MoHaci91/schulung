@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistik Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation Menu -->
+    <nav>
+        <a href=index.html>Home</a>
+        <a href=personal.html>Personal</a>
+        <a href=kalender.html>Kalender</a>
+        <a href=einladung.html>Einladung</a>
+        <a href=schulungen.html>Schulungen</a>
+        <a href=statistik.html>Statistik</a>
+        <a href="#suche">Suche</a>
+    </nav>
+
+    <!-- Statistik Section -->
+    <main id="statistik">
+        <h1>Statistik</h1>
+
+        <!-- Filter Form -->
+        <section class="form-section">
+            <h2>Filter</h2>
+            <form>
+                <div class="form-container">
+                    <!-- First Column -->
+                    <div class="form-group">
+                        <label for="schulung">Schulung</label>
+                        <select id="schulung">
+                            <option value="" disabled selected>Wähle eine Schulung</option>
+                            <option value="Schulung 1">Schulung 1</option>
+                            <option value="Schulung 2">Schulung 2</option>
+                        </select>
+
+                        <label for="modul">Modul</label>
+                        <select id="modul">
+                            <option value="" disabled selected>Wähle ein Modul</option>
+                            <option value="Modul 1">Modul 1</option>
+                            <option value="Modul 2">Modul 2</option>
+                        </select>
+                    </div>
+
+                    <!-- Second Column -->
+                    <div class="form-group">
+                        <label for="from-date">Von</label>
+                        <input type="date" id="from-date">
+
+                        <label for="to-date">Bis</label>
+                        <input type="date" id="to-date">
+                    </div>
+
+                    <!-- Third Column -->
+                    <div class="form-group">
+                        <label for="stelle">Stelle</label>
+                        <select id="stelle">
+                            <option value="" disabled selected>Wähle eine Stelle</option>
+                            <option value="Stelle 1">Stelle 1</option>
+                            <option value="Stelle 2">Stelle 2</option>
+                        </select>
+
+                        <label for="stellenprofil">Stellenprofil</label>
+                        <select id="stellenprofil">
+                            <option value="" disabled selected>Wähle ein Stellenprofil</option>
+                            <option value="Profil 1">Profil 1</option>
+                            <option value="Profil 2">Profil 2</option>
+                        </select>
+                    </div>
+
+                    <!-- Fourth Column -->
+                    <div class="form-group">
+                        <label for="status">Status</label>
+                        <select id="status">
+                            <option value="" disabled selected>Wähle einen Status</option>
+                            <option value="Aktiv">Aktiv</option>
+                            <option value="Inaktiv">Inaktiv</option>
+                            <option value="Karenz">Karenz</option>
+                        </select>
+
+                        <label for="bestanden">Bestanden</label>
+                        <select id="bestanden">
+                            <option value="" disabled selected>Wähle Ja oder Nein</option>
+                            <option value="Ja">Ja</option>
+                            <option value="Nein">Nein</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="buttons">
+                    <button type="submit" class="save">Suchen</button>
+                    <button type="reset" class="edit">Filter zurücksetzen</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Results Section -->
+        <section>
+            <h2>Ergebnisse</h2>
+
+            <!-- Diagram Placeholder -->
+            <div class="diagram">
+                <p>Diagramm wird hier angezeigt</p>
+            </div>
+
+            <!-- Results Table -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Schulung</th>
+                        <th>Modul</th>
+                        <th>Teilnehmer/in</th>
+                        <th>Status</th>
+                        <th>Bestanden</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Schulung 1</td>
+                        <td>Modul 1</td>
+                        <td>Max Mustermann</td>
+                        <td>Aktiv</td>
+                        <td>Ja</td>
+                    </tr>
+                    <tr>
+                        <td>Schulung 2</td>
+                        <td>Modul 2</td>
+                        <td>Maria Musterfrau</td>
+                        <td>Karenz</td>
+                        <td>Nein</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Print Results Button -->
+            <div class="buttons">
+                <button class="save">Ergebnisse drucken</button>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

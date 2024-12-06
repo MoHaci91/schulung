@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Menu</title>
+    <!-- Verweis auf die externe CSS-Datei -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav>
+        <a href=index.html>Home</a>
+        <a href=personal.html>Personal</a>
+        <a href=kalender.html>Kalender</a>
+        <a href=einladung.html>Einladung</a>
+        <a href=schulungen.html>Schulungen</a>
+        <a href=statistk.html>Statistik</a>
+        <a href="#suche">Suche</a>
+    </nav>
+
+    <!-- Kalender Section -->
+    <main id="kalender">
+        <h1>Kalender</h1>
+        <iframe 
+            src="https://calendar.google.com/calendar/embed?src=de.german%23holiday%40group.v.calendar.google.com&ctz=Europe%2FBerlin" 
+            style="border: 0" 
+            width="800" 
+            height="600" 
+            frameborder="0" 
+            scrolling="no">
+        </iframe>
+    </main>
+
+
+    
+</body>
+
+</html>

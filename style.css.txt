@@ -1,0 +1,314 @@
+/* Styling for navigation bar */
+nav {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+nav a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Form styling */
+.form-container {
+    display: flex;
+    gap: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.form-group {
+    flex: 1;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttons .save {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.buttons .edit {
+    background-color: #007BFF;
+    color: white;
+}
+
+.buttons button:hover {
+    opacity: 0.8;
+}
+
+/* Styles für Kalender und Einladung */
+
+iframe {
+    display: block;
+    margin: auto;
+    border-radius: 8px;
+}
+
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}
+
+select[multiple] {
+    height: 150px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.schulung {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.schulung label {
+    flex: 2;
+}
+
+.schulung select,
+.schulung input {
+    flex: 1;
+}
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+nav a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+/* Forms */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button.save {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+button.save:hover {
+    background-color: #45a049;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+button.edit {
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+}
+
+button.edit:hover {
+    background-color: #0056b3;
+}
+
+button.delete {
+    background-color: #f44336;
+    color: white;
+    cursor: pointer;
+}
+
+button.delete:hover {
+    background-color: #d32f2f;
+}
+
+/* Filter Form Layout */
+.form-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-group {
+    flex: 1;
+    min-width: 200px;
+}
+
+/* Diagram Placeholder */
+.diagram {
+    width: 100%;
+    height: 300px;
+    background-color: #f2f2f2;
+    border: 1px dashed #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    font-style: italic;
+    color: #666;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f9f9f9;
+    font-weight: bold;
+}
+
+/* Buttons */
+.buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button.save {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button.save:hover {
+    background-color: #45a049;
+}
+
+button.edit {
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button.edit:hover {
+    background-color: #0056b3;
+}
+
+
+
